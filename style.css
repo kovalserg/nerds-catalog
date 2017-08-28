@@ -1,0 +1,17 @@
+
+.order{
+    background-image: url('img/order.png') ;
+    width: 15px;
+    height: 15px;
+}
+.gallery{
+    width: 616px ;
+    height: 360px ;
+    padding: 10px ;
+}
+.maps{
+    background-image: url('img/maps.jpg') ;
+    width: 1440px;
+    height: 416px;
+    padding: 0;
+    }
