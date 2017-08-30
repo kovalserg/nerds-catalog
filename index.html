@@ -8,7 +8,7 @@
 <body>
     <header>
         <div class="header-logo">
-            <a href="#"><img width="160px" height="65px" src="img\nerds-logo.png" alt="Nёrds"></a>
+            <a href="https://kovalserg.github.io/Nerds/#"><img width="160px" height="65px" src="img\nerds-logo.png" alt="Nёrds"></a>
         </div>
         <nav class="main-nav">
             <ul>
@@ -25,96 +25,159 @@
                     <a href="#">Контакты</a>
                 </li>
                 <li class="order">
-                        <a href="#">Корзина</a>
+                    <a href="#">Корзина</a>
                 </li>
             </ul>
         </nav>
         <h1>Магазин готовых шаблонов</h1>
     </header>
     <main class="catalog">
-        <form action="">
+        <div class="filter-grup">
             <div class="filter">
-                <div class="band">
-                    <input type="range" min="0" max="20000" step="1" value="15000">
-                </div>
-                <div class="sorting">
-                    <h3>Сортировать по:</h3>
-                    <button id="price">По цене</button>
-                    <button id="type">По типу</button>
-                    <button id="name">По названию</button>
-                </div>
+                <h3>Стоимость :</h3>
+                <input type="range" min="0" max="20000" step="1" value="15000">
+                <label for="min">от</label>
+                <input id="min" type="text" min="0" placeholder="0">
+                <label for="max">до</label>
+                <input id="max" type="text" max="20000" placeholder="20000">
+            </div>
+            <div class="sorting">
+                <h3>Сортировать :</h3>
+                <button id="price">По цене</button>
+                <button id="type">По типу</button>
+                <button id="name">По названию</button>
+                <button id="up">up</button>
+                <button id="down">down</button>
+            </div>
+        </div>
+        <aside class="catalog-filter">
+            <form action="">
                 <h3>Сетка:</h3>
                 <div class="ch-group">
+                    <input type="checkbox">
                     <label for="">Адаптивная</label>
-                    <input type="checkbox">
                 </div>
                 <div class="ch-group">
+                    <input type="checkbox">
                     <label for="">Фиксированная</label>
-                    <input type="checkbox">
                 </div>
                 <div class="ch-group">
-                    <label for="">Резиновая</label>
                     <input type="checkbox">
+                    <label for="">Резиновая</label>
                 </div>
                 <h3>Особенности:</h3>
                 <div class="ch-group">
+                    <input type="checkbox">
                     <label for="">Слайдер</label>
-                    <input type="checkbox">
                 </div>
                 <div class="ch-group">
+                    <input type="checkbox">
                     <label for="">Блок преимуществ</label>
-                    <input type="checkbox">
                 </div>
                 <div class="ch-group">
+                    <input type="checkbox">
                     <label for="">Новости</label>
-                    <input type="checkbox">
                 </div>
                 <div class="ch-group">
+                    <input type="checkbox">
                     <label for="">Галерея</label>
-                    <input type="checkbox">
                 </div>
                 <div class="ch-group">
-                    <label for="">Корзина</label>
                     <input type="checkbox">
+                    <label for="">Корзина</label>
                 </div>
-            <button class="btn" type="submit">Показать</button>
+                <button class="btn" type="submit">Показать</button>
+            </form>
+        </aside>
+        <div class="catalog-items">
+            <div class="catalog-item">
+                <div class="title">
+                    <div class="title-btn"></div>
+                    <div class="title-btn"></div>
+                    <div class="title-btn"></div>
+                </div>
+                <div class="body">
+                    <img src="img/sedona.jpg" alt="">
+                </div>
+                <div class="desc">
+                    <h2>Sedona</h2>
+                    <p>Информационный сайт для туристов.</p>
+                    <a href="">9900 руб.</a>
+                </div>
             </div>
-            <div class="gallery">
-                <div class="gallery-sedona">
-                    <img src="img/sedonia.jpg" alt="">
-                    <h3>Sedona</h3>
-                    <p>Информационный сайт  для туристов</p>
-                    <a href="#">9900руб</a>
+            <div class="catalog-item">
+                <div class="title">
+                    <div class="title-btn"></div>
+                    <div class="title-btn"></div>
+                    <div class="title-btn"></div>
                 </div>
-                <div class="gallery-pink">
+                <div class="body">
                     <img src="img/pink.jpg" alt="">
-                    <h3>Pink App</h3>
-                    <p>Продуктовый лендинг приложения для iOS и Android</p>
-                    <a href="#">9900руб</a>
                 </div>
-                <div class="gallery-Barbershop">
-                    <img src="img/barber.jpg" alt="">
-                    <h3>Barbershop</h3>
+                <div class="desc">
+                    <h2>Pink App</h2>
+                    <p>Продуктовый лендинг приложения для IOS и Android.</p>
+                    <a href="">9900 руб.</a>
+                </div>
+            </div>
+            <div class="catalog-item">
+                <div class="title">
+                    <div class="title-btn"></div>
+                    <div class="title-btn"></div>
+                    <div class="title-btn"></div>
+                </div>
+                <div class="body">
+                    <img src="img/barbershop.jpg" alt="">
+                </div>
+                <div class="desc">
+                    <h2>Barbershop</h2>
                     <p>Сайт салоны красоты. Для мужчин, да.</p>
-                    <a href="#">9900руб</a>
+                    <a href="">9900 руб.</a>
                 </div>
-                <div class="gallery-Mishka">
+            </div>
+            <div class="catalog-item">
+                <div class="title">
+                    <div class="title-btn"></div>
+                    <div class="title-btn"></div>
+                    <div class="title-btn"></div>
+                </div>
+                <div class="body">
                     <img src="img/mishka.jpg" alt="">
-                    <h3>MISHKA</h3>
-                    <p>Интернет-магазин  вязаных игрушек</p>
-                    <a href="#">9900руб</a>
                 </div>
-                <div class="gallery-aplus">
+                <div class="desc">
+                    <h2>Mishka</h2>
+                    <p>Интернет-магазин вязаных игрущек.</p>
+                    <a href="">9900 руб.</a>
+                </div>
+            </div>
+            <div class="catalog-item">
+                <div class="title">
+                    <div class="title-btn"></div>
+                    <div class="title-btn"></div>
+                    <div class="title-btn"></div>
+                </div>
+                <div class="body">
                     <img src="img/aplus.jpg" alt="">
-                    <h3>A Plus</h3>
-                    <p>Лендинг курсов повышения квалификации</p>
-                    <a href="#">9900руб</a>
                 </div>
-                <div class="gallery-kvas">
-                    <img src="img/kvas.jpg" alt="">
-                    <h3>КВАСТ</h3>
-                    <p>Промо-сайт производителя крафтового кваса</p>
-                    <a href="#">9900руб</a>
+                <div class="desc">
+                    <h2>Aplus</h2>
+                    <p>Лендинг курсов повышения квалификации.</p>
+                    <a href="">9900 руб.</a>
+                </div>
+            </div>
+            <div class="catalog-item">
+                <div class="title">
+                    <div class="title-btn"></div>
+                    <div class="title-btn"></div>
+                    <div class="title-btn"></div>
+                </div>
+                <div class="body">
+                    <img src="img/kvast.jpg" alt="">
+                </div>
+                <div class="desc">
+                    <h2>Кваст</h2>
+                    <p>Промо-сайт производителя крафтового кваса.</p>
+                    <a href="">9900 руб.</a>
                 </div>
             </div>
             <div class="pagination">
@@ -122,8 +185,8 @@
                 <a href="#" >2</a>
                 <a href="#">3</a>
                 <a href="#">Следующая</a>
-            </div>              
-        </form>
+            </div>
+        </div>              
         <div class="maps">
             <div class="contacts">
                 <h4>NЁRDS DESIGN STUDIO</h4>
@@ -131,18 +194,6 @@
                 <a href="tel:88122757575">тел. +7(812)275-75-75</a>
                 <a href="#">Напишите нам</a>
             </div>
-            <form class="appointment-form" action="" method="">
-                <label for="name-field">
-                    Ваше имя:<input type="text" name="name" value="" placeholder="Представьтесь,пожалуйста" id="name-field">
-                </label>
-                <label for="email-field">
-                    Ваш e-mail:<input type="email" name="email:" value="" placeholder="Для отправки ответа" id="email-field">
-                </label>
-                <label for="">
-                    Текст письма:<textarea name="comment" id="comment-field" cols="50" rows="10" placeholder="В свободной форме"></textarea>
-                </label>
-                <button class="btn" type="submit" active>Отправить</button>
-            </form>
         </div>
     </main>
     <footer>
@@ -153,7 +204,19 @@
             <a class="social-btn social-btn-fb" href="#">fb</a>
             <a class="social-btn social-btn-inst" href="#">instagram</a>
         </section>
-    </footer> 
+    </footer>
+    <form class="appointment-form" action="" method="">
+            <label for="name-field">
+                Ваше имя:<input type="text" name="name" value="" placeholder="Представьтесь,пожалуйста" id="name-field">
+            </label>
+            <label for="email-field">
+                Ваш e-mail:<input type="email" name="email:" value="" placeholder="Для отправки ответа" id="email-field">
+            </label>
+            <label for="comment-field">
+                Текст письма:<textarea name="comment" id="comment-field" cols="50" rows="10" placeholder="В свободной форме"></textarea>
+            </label>
+            <button class="btn" type="submit" active>Отправить</button>
+        </form> 
 </body>
 </html>
 
