@@ -14,4 +14,16 @@
     width: 1440px;
     height: 416px;
     padding: 0;
-    }
+}
+#up{
+    background-image: url('img/up.png') ;
+    width: 10px ;
+    height: 10px ;
+
+}
+#down{
+    background-image: url('img/down.png') ;
+    width: 10px ;
+    height: 10px ;
+
+}
