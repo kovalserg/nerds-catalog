@@ -1,19 +1,96 @@
-
+body{
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;  
+}
+header{
+    width: 1440px ;
+    height: 350px ;
+    background-color: #EEEEEE ;
+    top: 0 ;
+    left: 0 ;
+    right: 0 ;
+}
+.header-container{
+    margin-top: 50px;
+    align-items: center ;
+    
+}
+li{
+    display:inline-flex;
+    margin-left: auto;
+    margin-right: 45px;
+}
 .order{
     background-image: url('img/order.png') ;
+    background-repeat: no-repeat;
     width: 15px;
     height: 15px;
+    margin-left: 200px;
 }
-.gallery{
+h1{
+    font-size: 55px;
+    text-align: center;
+}
+p{
+    font-size: 16px;
+}
+.catalog-items{
     width: 616px ;
     height: 360px ;
-    padding: 10px ;
+}
+.title{
+    background-color: #EEEEEE;
+    width: 360px;
+    height:20px ;
+    border-radius: 3px 3px 0 0;
+}
+.desc{
+    width: 360px ;
+    height: 230px ;
+    background-color: #EEEEEE;
+    text-align: center;
+}
+.btn{
+    background-color: #FB565A;
+    color: white;
+    padding: 20px 60px ;
+    cursor: pointer;
+    border-bottom:1px #FB565A;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 16px;
+
+}
+button.ch-btn{
+    background-color: #EEEEEE;
+    padding: 20px 90px;
+    cursor: pointer;
+    color: black;
+}
+.pagination a{
+    background-color: #EEEEEE;
+    padding: 20px;
+    color: black;
+}
+.pagination .next{
+    background-color: #EEEEEE;
+    padding: 20px 80px;
+    color: black;
 }
 .maps{
     background-image: url('img/maps.jpg') ;
     width: 1440px;
     height: 416px;
-    padding: 0;
+}
+.contacts{
+    width:320px ; 
+    height:310px ;
+    background-color: white;
+
 }
 #up{
     background-image: url('img/up.png') ;
@@ -26,4 +103,18 @@
     width: 11px ;
     height: 11px ;
 
+}
+form{
+    width: 960px ;
+    height: 595px ;
+}
+form .btn {
+    background-color: #FB565A;
+    color: white;
+    padding: 20px 80px ;
+    cursor: pointer;
+    border-bottom:1px #FB565A;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 16px;
 }
